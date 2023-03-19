@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/78617479a5.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Audiowide&family=Cinzel&family=Kalam&family=Roboto&family=Vollkorn+SC&family=Zilla+Slab:wght@300&family=Six+Caps&display=swap');
+
+        #h1 {
+            /* font-family: 'Six Caps', sans-serif; */
+            font-family: 'Cinzel', serif;
+        }
+
+        #a {
+            font-size: large;
+            font-weight: 500;
+            font-family: 'Kalam', cursive;
+        }
+
+        .carohead {
+            font-size: 100px;
+            color: white;
+            font-family: 'Vollkorn SC', serif;
+        }
+
+        .carop {
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            font-family: 'Cinzel', serif;
+        }
+
+        .b1 {
+            font-weight: 500;
+            font-family: 'Roboto', sans-serif;
+            height: 35px;
+        }
+
+        #b2 {
+            background-color: rgb(0, 110, 255);
+            color: white;
+            border-color: gray;
+        }
+
+        #b2:hover {
+            background-color: white;
+            color: rgb(0, 110, 255);
+            border-color: rgb(0, 110, 255);
+        }
+
+        #b3 {
+            background-color: lightseagreen;
+            color: white;
+            border-color: gray;
+
+        }
+
+        #b3:hover {
+            background-color: white;
+            color: lightseagreen;
+            border-color: lightseagreen;
+        }
+
+        #i2 {
+            font-size: 30px;
+            padding-left: 25px;
+        }
+
+        #im2 {
+            width: 100%;
+            border-radius: 65px;
+        }
+        #ap{
+            font-size: large;
+            font-weight: 500;
+            font-family: 'Zilla Slab', serif;
+        }
+
+        .card-img-top {
+            height: 300px;
+        }
+
+        .card {
+            transition-duration: 1s;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px 0px rgba(117, 83, 83, 0.877);
+            transform: translateY(-10px);
+        }
+
+        @media (max-width:700px) {
+
+            .carohead {
+                font-size: 30px;
+            }
+
+            .carop {
+                font-size: 15px;
+            }
+
+            .b1{
+                font-size:x-small;
+                height: 30%;
+                padding: 3px;
+            }
+
+            #i2 {
+                font-size: 20px;
+                padding-left: 12px;
+            }
+
+            #ap {
+                font-size: x-small;
+            }
+            .card img{
+                height: 175px;
+            }
+            .card-body h5{
+                font-size: medium;
+            }
+            .card-body p{
+                font-size: smaller;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#home" id="a">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#about" id="a">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#service" id="a">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./skills.html" id="a">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="./projects.html" id="a">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#contact" id="a">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid w-100 p-5"
+        style="background-image: linear-gradient(to top left, rgba(54, 40, 40, 0.479),rgba(107, 143, 138, 0.499)); border-top-right-radius: 15px; border-top-left-radius: 15px;">
+
+
+        <section id="home">
+
+
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+
+                    <div class="text-center p-5">
+                        <h1 class="carohead">Hi</h1>
+                        <h2 class="carohead">I'm MOHAMMED FAYIZ K</h2>
+                        <p class="carop">Python Django Full Stack Developer</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="text-center">
+                        <img src="./image/WhatsApp Image 2023-03-19 at 19.42.51.jpg" alt="..." style="width: 50%; height: 510px; margin-top: 94px; border-radius: 32%;"
+                            class="bg-light">
+                    </div>
+                </div>
+                <div class="text-center mt-5 mb-5">
+                    <div>
+                        <a href="https://drive.google.com/drive/folders/1ei6vHPBJGTcBHjFNjcbB1rDPglxOlkqz"><button id="b2"
+                                type="button" class="b1 rounded-pill">Download CV</button></a>
+                        <a href="tel:+91974-682-6171"><button id="b3" type="button" class="b1 rounded-pill">Contact Me</button></a>
+                    </div>
+                    <div id="about" class="mt-4">
+                        <a id="i2" href="https://github.com/mhdfayizk"><i class="fa-brands fa-github"
+                                style="color: black;"></i></a>
+                        <a id="i2" href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a id="i2" href=""><i
+                                class="fa-brands fa-facebook" style="color: blue;"></i></a>
+                        <a id="i2" href=""><i
+                                class="fa-brands fa-linkedin" style="color: rgb(45, 45, 89);"></i></a>
+                        <a id="i2" href=""><i
+                                class="fa-brands fa-instagram" style="color: rgba(242, 68, 9, 0.848);"></i></a>
+                        <a id="i2" href=""><i class="fa-brands fa-youtube"
+                                style="color: red;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="text-center">
+                    <h1 id="h1" class="text-dark">ABOUT ME</h1>
+                </div>
+                <div id="c1" class="row mt-5" style="background-color: rgba(84, 78, 78, 0.432); border-radius: 10px;">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <img src="./image/fayiz (4).jpg" alt="" id="im2" class="p-5">
+                    </div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 text-white">
+                        <p class="p-5" style="text-align:justify; " id="ap">I'm MOHAMMED FAYIZ K
+                            i'm a Web Developer and Designer with over 6 Month Experience developing and deploying
+                            dynamic and scalable web applications using Python, Django, JavaScript, HTML, CSS, and
+                            various front-end and back-end frameworks. Proficient in integrating web applications with
+                            databases SQLite.I'm also have basic skills in Hardware Networking and Configuration Now iam
+                            eargerly learn Django and i look forward to work with an organization which offers a
+                            challenging opportunity to enhance my knowledge skills and experience that would allow me to
+                            contribute towards achieving the organizational goal to the best of my potential. Iam an
+                            aspiring programmer, getting trained by Luminar Technolab.I have strong technical
+                            skillsparticularly in Python basics, HTML, CSS, Bootstrap,<span id="service"></span> Git.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="pt-5">
+                    <h1 id="h1" class="text-center">SERVICES</h1>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-5 ">
+                    <div class="card" style="width: 100%;">
+                        <img src="./image/web.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">Design Frontend and Backend of Website using Python and Django
+                                Framework.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-5">
+                    <div class="card" style="width: 100%;">
+                        <img src="image/network.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Networking</h5>
+                            <p class="card-text">Design and install well-functioning computer networks, connections and
+                                cabling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 p-5">
+                    <div class="card" style="width: 100%;">
+                        <img src="./image/and.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Android Development</h5>
+                            <p class="card-text">Designing and developing advanced applications for the Android
+                                platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="contact">
+        <div class="container-fluid w-100">
+            <div id="c1" class="row bg-dark p-5"
+                style="border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;">
+                <div class="text-center">
+                    <h1 id="h1" class="text-light">Contact</h1>
+                    <div class="content text-light">
+                        <div class="Name">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="text">Mohammed fayiz k</span>
+                        </div>
+                        <div class="place">
+                            <i class="fa fa-map-marker"></i>
+                            <span class="text">Areekode</span><br>Malappuram, Kerala</span>
+                        </div>
+                        <div class="phone">
+                            <i class="fa fa-phone"></i>
+                            <span class="text">+91-9746826171</span>
+                        </div>
+                        <div class="place">
+                            <i class="fa fa-envelope"></i>
+                            <span class="text">fayizkmohd@gmail.com</span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-danger mt-3 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Contact Me
+                    </button><br>
+                    <a style="text-decoration: none;" class="text-secondary p-3" aria-current="page" href="#home"
+                        id="a">Home</a>
+                    <a style="text-decoration: none;" class="text-secondary p-3" href="#about" id="a">About</a>
+                    <a style="text-decoration: none;" class="text-secondary p-3" href="#service" id="a">Services</a>
+                    <p class="text-light">© Developed By <a href=""
+                            class="text-primary">Mohammed fayiz k</a></p>
+                </div>
+            </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content container">
+                <div class="modal-header ms-5">
+                    <h1 class="modal-title fs-5 mt-5 " style="font-weight: 700;" id="exampleModalLabel">Leave me a
+                        Message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ms-5 ">
+                    <input type="text" style="border: none;" placeholder="Name" class="form-control">
+                    <hr>
+                    <input type="text" style="border: none;" placeholder="Email" class="form-control">
+                    <hr>
+                    <textarea name="" id="" class="form-control" cols="30" rows="3" placeholder="Comment"></textarea>
+                    <hr>
+                    <div class="form-check">
+                        <input class="form-check-input border-primary" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Check me out
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-5">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
